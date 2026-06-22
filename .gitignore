@@ -1,0 +1,46 @@
+# Environment
+.env
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ML models (large binaries — users train locally)
+frauddetect-ml/models/fraud_model.pkl
+frauddetect-ml/models/model_meta.pkl
+frauddetect-ml/models/*.png
+
+# Vector stores (regenerated on first run)
+cybersentry/chroma_db/
+compliance-rag/faiss_index/
+
+# Output files
+cybersentry/output/*.csv
+cybersentry/output/*.json
+cybersentry/output/*.md
+vendorrisk-ai/output/
+finsentinel/sentinel_alerts.log
+enterprise-bridge-ai/connector_calls.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp

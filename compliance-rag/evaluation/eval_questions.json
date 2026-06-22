@@ -1,0 +1,72 @@
+[
+  {
+    "id": "Q001",
+    "framework": "APRA CPS 234",
+    "question": "What does CPS 234 require regarding information security capability?",
+    "expected_keywords": ["commensurate", "threats", "board", "oversight", "policy"],
+    "expected_framework": "APRA CPS 234"
+  },
+  {
+    "id": "Q002",
+    "framework": "APRA CPS 234",
+    "question": "What are the notification obligations under APRA if a material breach occurs?",
+    "expected_keywords": ["72 hours", "notify", "material", "APRA"],
+    "expected_framework": "APRA CPS 234"
+  },
+  {
+    "id": "Q003",
+    "framework": "ISO 27001",
+    "question": "How does ISO 27001 Annex A address access control?",
+    "expected_keywords": ["A.5.15", "least privilege", "access rights", "review"],
+    "expected_framework": "ISO 27001"
+  },
+  {
+    "id": "Q004",
+    "framework": "SOC 2",
+    "question": "What logical access controls are required under SOC 2?",
+    "expected_keywords": ["CC6", "MFA", "multi-factor", "access", "provisioned"],
+    "expected_framework": "SOC 2"
+  },
+  {
+    "id": "Q005",
+    "framework": "APRA CPS 234",
+    "question": "How does CPS 234 address third-party information security risk?",
+    "expected_keywords": ["third party", "responsible", "contractual", "audit"],
+    "expected_framework": "APRA CPS 234"
+  },
+  {
+    "id": "Q006",
+    "framework": "SOC 2",
+    "question": "What does SOC 2 require for change management?",
+    "expected_keywords": ["CC8", "change", "authorised", "tested", "documented"],
+    "expected_framework": "SOC 2"
+  },
+  {
+    "id": "Q007",
+    "framework": "ISO 27001",
+    "question": "How does ISO 27001 handle privileged access management?",
+    "expected_keywords": ["A.8.2", "privileged", "separate", "monitoring"],
+    "expected_framework": "ISO 27001"
+  },
+  {
+    "id": "Q008",
+    "framework": "SOC 2",
+    "question": "What availability criteria apply under SOC 2?",
+    "expected_keywords": ["A1", "availability", "SLA", "recovery", "RTO"],
+    "expected_framework": "SOC 2"
+  },
+  {
+    "id": "Q009",
+    "framework": "APRA CPS 234",
+    "question": "Does CPS 234 require penetration testing?",
+    "expected_keywords": ["penetration testing", "annually", "internet-facing", "independent"],
+    "expected_framework": "APRA CPS 234"
+  },
+  {
+    "id": "Q010",
+    "framework": "ISO 27001",
+    "question": "What is the Statement of Applicability in ISO 27001?",
+    "expected_keywords": ["SoA", "applicable", "controls", "justification", "Annex A"],
+    "expected_framework": "ISO 27001"
+  }
+]

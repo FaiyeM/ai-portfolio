@@ -1,0 +1,21 @@
+{
+  "vendor_name": "FinCo Services",
+  "assessment_date": "2024-06-21",
+  "questionnaire": "default",
+  "responses": {
+    "1": "We encrypt databases using industry standard methods. Some legacy systems use older encryption but we are in the process of upgrading.",
+    "2": "Our web applications support TLS but some internal APIs still use HTTP for performance reasons. We are planning to address this.",
+    "3": "We comply with applicable privacy laws. We have a privacy policy on our website and train staff annually on data handling.",
+    "4": "Data is retained as required by law. We delete data when no longer needed. Specific timelines depend on the data type.",
+    "5": "We aim to restore services as quickly as possible following an outage. We do not have formally defined RTO/RPO commitments at this time.",
+    "6": "We test our business continuity plan periodically. Our last test was approximately 18 months ago.",
+    "7": "We back up data nightly. Backups are stored on-site and also on cloud storage. We have not tested restoration recently.",
+    "8": "We use some third-party services. We have standard contracts in place with most of our suppliers.",
+    "9": "We review our key suppliers annually through a standard procurement process. Security is one of the factors reviewed.",
+    "10": "We do not currently hold ISO 27001 or SOC 2 certification. We follow industry best practices and conduct internal security reviews.",
+    "11": "We maintain compliance with relevant regulations in our primary jurisdiction. Our legal team monitors regulatory developments.",
+    "12": "We will notify clients of security incidents as required by applicable law and our contractual obligations. Timelines depend on the nature of the incident.",
+    "13": "We have an incident response process. Our IT team handles security incidents. We have procedures documented internally.",
+    "14": "We have experienced some minor security events over the past 2 years which were handled internally. We do not believe these rose to the level of material incidents requiring customer notification."
+  }
+}

@@ -1,0 +1,51 @@
+# EnterpriseBridge AI — Example Commands with Expected Outputs
+
+## Command 1 — P1 Incident with Slack Notification
+Input: "Create a P1 Jira ticket for the payment gateway outage and notify the #incidents Slack channel"
+Expected tools: create_ticket(system=jira, priority=P1) → send_slack_notification(channel=#incidents)
+Expected output: Jira ticket created (e.g. PAY-8231), Slack message sent to #incidents
+
+## Command 2 — Multi-system Incident + Escalation
+Input: "Create a P2 ServiceNow incident for database replication lag and escalate it immediately"
+Expected tools: create_ticket(system=servicenow, priority=P2) → escalate_incident()
+Expected output: ServiceNow incident created (INCxxxxxxx), escalated to Major Incident Team
+
+## Command 3 — Status Summary
+Input: "Give me a summary of all open incidents across Jira and ServiceNow"
+Expected tools: summarise_open_incidents(system=both)
+Expected output: Combined list of open tickets from both systems
+
+## Command 4 — Cross-system Coordination
+Input: "The authentication service is down — create P1 tickets in both Jira and ServiceNow, and notify #engineering and #incidents"
+Expected tools: create_ticket(jira) → create_ticket(servicenow) → send_slack_notification(#engineering) → send_slack_notification(#incidents)
+Expected output: 2 tickets created, 2 Slack channels notified
+
+## Command 5 — Query Existing Ticket
+Input: "What is the current status of Jira ticket PAY-1042?"
+Expected tools: query_ticket_status(system=jira, ticket_id=PAY-1042)
+Expected output: Status=In Progress, Priority=P2, Assignee=alex.chen@example.com
+
+## Command 6 — ServiceNow Escalation
+Input: "Escalate INC0012847 — it's been 4 hours and Finance team is still impacted"
+Expected tools: escalate_incident(ticket_id=INC0012847, escalation_reason=...)
+Expected output: Escalated to Major Incident Team, CTO and ops-manager notified
+
+## Command 7 — Slack-only Broadcast
+Input: "Send a message to #on-call that the API rate limit has been increased to 10,000 req/min"
+Expected tools: send_slack_notification(channel=#on-call, message=...)
+Expected output: Message sent to #on-call
+
+## Command 8 — Incident Triage
+Input: "What are all the open P1 and P2 incidents in ServiceNow right now?"
+Expected tools: summarise_open_incidents(system=servicenow, status_filter=open)
+Expected output: Filtered list of high-priority ServiceNow incidents
+
+## Command 9 — Post-incident
+Input: "Create a Jira ticket for post-incident review of the payment gateway outage from today"
+Expected tools: create_ticket(system=jira, title=Post-incident review, priority=P3)
+Expected output: Jira ticket created for PIR
+
+## Command 10 — Coordination Scenario
+Input: "The data pipeline has been failing for 2 hours. Create a P2 Jira ticket, notify #engineering, and check if there's already an open ServiceNow incident for it"
+Expected tools: create_ticket(jira) → send_slack_notification(#engineering) → summarise_open_incidents(servicenow)
+Expected output: Ticket created, Slack notified, ServiceNow incidents reviewed for duplicates

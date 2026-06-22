@@ -1,0 +1,21 @@
+{
+  "vendor_name": "Acme Corp",
+  "assessment_date": "2024-06-21",
+  "questionnaire": "default",
+  "responses": {
+    "1": "Yes. We encrypt all data at rest using AES-256. Our key management is handled through AWS KMS with automatic annual key rotation. Encryption covers all databases, file storage, and backup media. We conduct annual encryption audits.",
+    "2": "All data in transit is protected using TLS 1.2 minimum, with TLS 1.3 enabled by default on all public endpoints. We enforce HSTS and have deprecated all older protocols. Our certificate management uses AWS Certificate Manager with automatic renewal.",
+    "3": "We have a comprehensive privacy programme aligned with GDPR and the Australian Privacy Act. We maintain a data processing register, conduct PIAs for new processing activities, and have appointed a Data Protection Officer. We provide subject rights management tooling.",
+    "4": "Our data retention policy specifies retention periods by data category, ranging from 12 months for transactional logs to 7 years for financial records. Secure deletion uses NIST 800-88 compliant methods. Automated deletion workflows are reviewed quarterly.",
+    "5": "Our RTO is 4 hours and RPO is 1 hour for Tier 1 services. For Tier 2 services, RTO is 24 hours and RPO is 4 hours. These commitments are tested annually and reflected in our SLA.",
+    "6": "We conduct a full DR test annually with documented results shared with enterprise customers. Tabletop exercises are conducted quarterly. Our last full DR test was in March 2024 — recovery targets were met for all Tier 1 services.",
+    "7": "Production data is backed up every hour to a separate AWS region. Backups are encrypted at rest and retained for 90 days. We test backup restoration monthly. Off-site backups use a third-party cold storage provider for our most critical data sets.",
+    "8": "Yes, we use sub-processors including AWS (infrastructure), Salesforce (CRM), and Twilio (SMS). We have Data Processing Agreements with all sub-processors, conduct annual security reviews, and require them to notify us within 24 hours of any security incident.",
+    "9": "We perform annual security assessments of all critical sub-processors. For Tier 1 sub-processors, we review their SOC 2 Type II reports annually. We have a formal sub-processor approval process for new additions.",
+    "10": "We hold ISO 27001:2022 certification (renewed 2024), SOC 2 Type II (most recent period ending March 2024), and PCI DSS Level 1 certification. Copies of reports are available under NDA.",
+    "11": "We maintain a regulatory compliance register covering GDPR, Australian Privacy Act, APRA CPS 234, and relevant financial sector regulations. Our Chief Compliance Officer reports to the Board quarterly. We engage external legal counsel for regulatory monitoring.",
+    "12": "We contractually commit to notifying clients within 24 hours of discovering a material security incident. We provide written incident reports within 72 hours. Notification includes impact assessment, containment status, and remediation plan.",
+    "13": "Our Incident Response Plan follows the NIST framework (Prepare, Detect, Contain, Eradicate, Recover, Post-Incident). We have a named Security Incident Response Team (SIRT) with 24/7 on-call coverage. The IRP is tested annually via tabletop exercises and updated based on findings.",
+    "14": "We experienced one security incident in 2023 — a credential stuffing attack on our customer portal affecting 12 accounts. We detected it within 2 hours via anomaly detection, disabled affected accounts, forced password resets, and implemented additional MFA requirements. No data exfiltration was confirmed. A root cause analysis was completed and 5 remediation actions were implemented within 30 days."
+  }
+}

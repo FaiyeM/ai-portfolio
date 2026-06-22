@@ -1,0 +1,106 @@
+{
+  "name": "Standard Vendor Security Questionnaire",
+  "version": "2.0",
+  "domains": [
+    {
+      "domain": "Data Security & Privacy",
+      "weight": 0.30,
+      "questions": [
+        {
+          "id": 1,
+          "question": "Does your organisation encrypt data at rest using AES-256 or equivalent?",
+          "guidance": "Look for confirmation of encryption algorithm, key management practices, and scope of coverage."
+        },
+        {
+          "id": 2,
+          "question": "Is all data in transit protected using TLS 1.2 or higher?",
+          "guidance": "Verify TLS version, certificate management, and coverage across all APIs and web services."
+        },
+        {
+          "id": 3,
+          "question": "How does your organisation manage and protect personal data in accordance with applicable privacy regulations (e.g. GDPR, Australian Privacy Act)?",
+          "guidance": "Look for data mapping, privacy impact assessments, and regulatory compliance evidence."
+        },
+        {
+          "id": 4,
+          "question": "What data retention and secure deletion policies does your organisation have in place?",
+          "guidance": "Look for defined retention periods, secure deletion procedures, and evidence of enforcement."
+        }
+      ]
+    },
+    {
+      "domain": "Business Continuity & DR",
+      "weight": 0.25,
+      "questions": [
+        {
+          "id": 5,
+          "question": "What are your organisation's Recovery Time Objective (RTO) and Recovery Point Objective (RPO) for critical services?",
+          "guidance": "Assess whether RTO/RPO commitments align with the organisation's business continuity requirements."
+        },
+        {
+          "id": 6,
+          "question": "How frequently are your business continuity and disaster recovery plans tested?",
+          "guidance": "Look for annual full tests, regular tabletop exercises, and documentation of results."
+        },
+        {
+          "id": 7,
+          "question": "Describe your data backup strategy, including off-site or cloud backups.",
+          "guidance": "Verify backup frequency, off-site storage, encryption of backups, and restoration testing."
+        }
+      ]
+    },
+    {
+      "domain": "Third-Party Sub-processors",
+      "weight": 0.15,
+      "questions": [
+        {
+          "id": 8,
+          "question": "Do you use sub-processors to deliver services? If so, how do you manage their security obligations?",
+          "guidance": "Look for sub-processor agreements, security requirements flow-down, and oversight mechanisms."
+        },
+        {
+          "id": 9,
+          "question": "Do you perform security assessments of your sub-processors at least annually?",
+          "guidance": "Verify audit rights, SOC 2 report reviews, and risk-based assessment frequency."
+        }
+      ]
+    },
+    {
+      "domain": "Regulatory Compliance",
+      "weight": 0.15,
+      "questions": [
+        {
+          "id": 10,
+          "question": "Which security certifications or attestations does your organisation hold (e.g. ISO 27001, SOC 2 Type II, PCI DSS)?",
+          "guidance": "Verify currency of certifications, scope, and any noted exceptions or qualifications."
+        },
+        {
+          "id": 11,
+          "question": "How does your organisation ensure compliance with applicable financial sector regulations in the jurisdictions where you operate?",
+          "guidance": "Look for regulatory mapping, compliance monitoring, and evidence of regulatory liaison."
+        }
+      ]
+    },
+    {
+      "domain": "Incident Response",
+      "weight": 0.15,
+      "questions": [
+        {
+          "id": 12,
+          "question": "What is your organisation's contractual commitment for notifying clients of a data breach or security incident?",
+          "guidance": "Confirm notification timeframe (aim for ≤24 hours initial notification), scope of notification, and escalation contacts."
+        },
+        {
+          "id": 13,
+          "question": "Describe your incident response process, including how incidents are detected, contained, and remediated.",
+          "guidance": "Look for a documented IRP, named roles, escalation paths, and evidence of regular testing."
+        },
+        {
+          "id": 14,
+          "question": "Have you experienced any material security incidents in the last 24 months? If so, describe the nature and your response.",
+          "guidance": "Assess transparency, remediation quality, and whether lessons learned were incorporated."
+        }
+      ]
+    }
+  ]
+}

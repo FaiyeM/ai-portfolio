@@ -1,0 +1,122 @@
+[
+  {
+    "cve_id": "CVE-2024-21413",
+    "description": "Microsoft Outlook Remote Code Execution Vulnerability. An attacker can exploit this vulnerability to execute arbitrary code by convincing the victim to open a specially crafted file or click a malicious link. The vulnerability allows bypassing the Office Protected View security feature.",
+    "cvss_score": 9.8,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "severity": "CRITICAL",
+    "published_date": "2024-02-13",
+    "affected_products": ["Microsoft Outlook 2016", "Microsoft Outlook 2019", "Microsoft 365 Apps"],
+    "cwe": "CWE-20",
+    "references": ["https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-21413"],
+    "keywords": ["remote code execution", "outlook", "email client", "phishing", "arbitrary code"]
+  },
+  {
+    "cve_id": "CVE-2024-3400",
+    "description": "A command injection vulnerability in the GlobalProtect feature of Palo Alto Networks PAN-OS software for specific PAN-OS versions and distinct feature configurations may enable an unauthenticated attacker to execute arbitrary code with root privileges on the firewall.",
+    "cvss_score": 10.0,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+    "severity": "CRITICAL",
+    "published_date": "2024-04-12",
+    "affected_products": ["Palo Alto PAN-OS 10.2", "Palo Alto PAN-OS 11.0", "Palo Alto PAN-OS 11.1"],
+    "cwe": "CWE-77",
+    "references": ["https://security.paloaltonetworks.com/CVE-2024-3400"],
+    "keywords": ["command injection", "firewall", "network perimeter", "root privileges", "unauthenticated"]
+  },
+  {
+    "cve_id": "CVE-2024-1709",
+    "description": "ConnectWise ScreenConnect authentication bypass vulnerability allows an unauthenticated remote attacker to bypass authentication mechanisms and create a new administrator account or directly access confidential data. This vulnerability is being actively exploited in the wild.",
+    "cvss_score": 10.0,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+    "severity": "CRITICAL",
+    "published_date": "2024-02-21",
+    "affected_products": ["ConnectWise ScreenConnect 23.9.7", "ConnectWise ScreenConnect 23.9.8"],
+    "cwe": "CWE-288",
+    "references": ["https://www.connectwise.com/company/trust/security-bulletins/connectwise-screenconnect-23.9.8"],
+    "keywords": ["authentication bypass", "remote access", "administrator account", "credential theft", "privilege escalation"]
+  },
+  {
+    "cve_id": "CVE-2023-46805",
+    "description": "An authentication bypass vulnerability in the web component of Ivanti ICS 9.x, 22.x and Ivanti Policy Secure allows a remote attacker to access restricted resources by bypassing control checks.",
+    "cvss_score": 8.2,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N",
+    "severity": "HIGH",
+    "published_date": "2024-01-10",
+    "affected_products": ["Ivanti ICS 9.x", "Ivanti ICS 22.x", "Ivanti Policy Secure"],
+    "cwe": "CWE-287",
+    "references": ["https://forums.ivanti.com/s/article/CVE-2023-46805-Authentication-Bypass-CVE-2024-21887-Command-Injection-for-Ivanti-Connect-Secure-and-Ivanti-Policy-Secure-Gateways"],
+    "keywords": ["authentication bypass", "VPN", "remote access", "credential access", "lateral movement"]
+  },
+  {
+    "cve_id": "CVE-2024-23897",
+    "description": "Jenkins CLI reads files from the Jenkins controller file system using a feature that allows reading file content. This vulnerability can be exploited to read arbitrary files on the Jenkins controller file system, potentially exposing sensitive data including credentials stored in configuration files.",
+    "cvss_score": 9.8,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "severity": "CRITICAL",
+    "published_date": "2024-01-24",
+    "affected_products": ["Jenkins 2.441", "Jenkins LTS 2.426.2"],
+    "cwe": "CWE-88",
+    "references": ["https://www.jenkins.io/security/advisory/2024-01-24/"],
+    "keywords": ["file read", "credentials exposure", "CI/CD pipeline", "supply chain", "secret exfiltration"]
+  },
+  {
+    "cve_id": "CVE-2024-21762",
+    "description": "An out-of-bounds write vulnerability in Fortinet FortiOS allows remote unauthenticated attackers to execute arbitrary code or commands via specially crafted HTTP requests. This affects the SSL VPN web management interface.",
+    "cvss_score": 9.6,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+    "severity": "CRITICAL",
+    "published_date": "2024-02-08",
+    "affected_products": ["FortiOS 7.4.0", "FortiOS 7.2.0", "FortiOS 7.0.0", "FortiOS 6.4.0"],
+    "cwe": "CWE-787",
+    "references": ["https://www.fortiguard.com/psirt/FG-IR-24-015"],
+    "keywords": ["out-of-bounds write", "VPN", "remote code execution", "network perimeter", "initial access"]
+  },
+  {
+    "cve_id": "CVE-2023-44487",
+    "description": "HTTP/2 Rapid Reset Attack vulnerability allows an attacker to send a stream of HEADERS + RST_STREAM frames to create a denial of service condition. This vulnerability affects virtually all HTTP/2 server implementations and has been exploited in large-scale DDoS attacks.",
+    "cvss_score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "severity": "HIGH",
+    "published_date": "2023-10-10",
+    "affected_products": ["nginx < 1.25.3", "Apache HTTP Server < 2.4.58", "Microsoft IIS", "Node.js < 21.0.0"],
+    "cwe": "CWE-400",
+    "references": ["https://www.cve.org/CVERecord?id=CVE-2023-44487"],
+    "keywords": ["denial of service", "HTTP/2", "DDoS", "resource exhaustion", "availability impact"]
+  },
+  {
+    "cve_id": "CVE-2024-27198",
+    "description": "Authentication bypass vulnerability in JetBrains TeamCity On-Premises before 2023.11.4 allows unauthenticated attackers to gain administrative access to the server through alternative authentication paths in the REST API.",
+    "cvss_score": 9.8,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "severity": "CRITICAL",
+    "published_date": "2024-03-04",
+    "affected_products": ["JetBrains TeamCity On-Premises < 2023.11.4"],
+    "cwe": "CWE-288",
+    "references": ["https://blog.jetbrains.com/teamcity/2024/03/additional-critical-security-issues-affecting-teamcity-on-premises-cve-2024-27198-and-cve-2024-27199-update-to-2023-11-4-now/"],
+    "keywords": ["authentication bypass", "CI/CD", "administrative access", "supply chain", "persistence"]
+  },
+  {
+    "cve_id": "CVE-2024-20353",
+    "description": "Cisco Adaptive Security Appliance (ASA) and Firepower Threat Defense (FTD) software vulnerability allows an unauthenticated remote attacker to cause a denial of service condition by sending crafted HTTP requests to the management and VPN web servers.",
+    "cvss_score": 8.6,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+    "severity": "HIGH",
+    "published_date": "2024-04-24",
+    "affected_products": ["Cisco ASA 9.x", "Cisco FTD 7.x"],
+    "cwe": "CWE-835",
+    "references": ["https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-websrvs-dos-X8gNucD2"],
+    "keywords": ["denial of service", "firewall", "network perimeter", "availability", "infinite loop"]
+  },
+  {
+    "cve_id": "CVE-2024-28986",
+    "description": "SolarWinds Web Help Desk Java deserialization vulnerability allows an unauthenticated attacker to execute arbitrary commands on the host machine through a crafted HTTP request. This affects the SolarWinds Web Help Desk software and could lead to complete system compromise.",
+    "cvss_score": 9.8,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "severity": "CRITICAL",
+    "published_date": "2024-08-21",
+    "affected_products": ["SolarWinds Web Help Desk 12.8.3"],
+    "cwe": "CWE-502",
+    "references": ["https://www.solarwinds.com/trust-center/security-advisories/cve-2024-28986"],
+    "keywords": ["deserialization", "remote code execution", "ITSM", "arbitrary commands", "unauthenticated"]
+  }
+]

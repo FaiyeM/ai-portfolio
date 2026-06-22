@@ -1,0 +1,12 @@
+[
+  {"ticker": "CBA", "name": "Commonwealth Bank of Australia", "exchange": "ASX", "sector": "Banking", "weight": 0.12},
+  {"ticker": "BHP", "name": "BHP Group", "exchange": "ASX", "sector": "Mining", "weight": 0.10},
+  {"ticker": "CSL", "name": "CSL Limited", "exchange": "ASX", "sector": "Healthcare", "weight": 0.08},
+  {"ticker": "NAB", "name": "National Australia Bank", "exchange": "ASX", "sector": "Banking", "weight": 0.07},
+  {"ticker": "ANZ", "name": "ANZ Banking Group", "exchange": "ASX", "sector": "Banking", "weight": 0.07},
+  {"ticker": "AAPL", "name": "Apple Inc.", "exchange": "NYSE", "sector": "Technology", "weight": 0.15},
+  {"ticker": "MSFT", "name": "Microsoft Corporation", "exchange": "NYSE", "sector": "Technology", "weight": 0.14},
+  {"ticker": "JPM", "name": "JPMorgan Chase & Co.", "exchange": "NYSE", "sector": "Banking", "weight": 0.10},
+  {"ticker": "NVDA", "name": "NVIDIA Corporation", "exchange": "NYSE", "sector": "Technology", "weight": 0.09},
+  {"ticker": "GLD", "name": "SPDR Gold Trust", "exchange": "NYSE", "sector": "Commodities", "weight": 0.08}
+]

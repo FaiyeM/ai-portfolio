@@ -1,0 +1,181 @@
+{
+  "questionnaire_id": "financial_sector_v1",
+  "title": "Financial Sector Vendor Risk Assessment",
+  "description": "Enhanced 25-question assessment for vendors operating in regulated financial services environments. Aligns with APRA CPS 234, AUSTRAC AML/CTF, PCI DSS, and ISO 27001:2022.",
+  "version": "1.0",
+  "domains": [
+    {
+      "domain_id": "data_security",
+      "domain_name": "Data Security & Privacy",
+      "weight": 0.28,
+      "questions": [
+        {
+          "id": "DS-01",
+          "text": "Do you encrypt all financial data at rest using AES-256 or equivalent? Please describe your key management practices.",
+          "type": "open_text",
+          "required": true
+        },
+        {
+          "id": "DS-02",
+          "text": "Do you encrypt all data in transit using TLS 1.2 or higher? Describe certificate management.",
+          "type": "open_text",
+          "required": true
+        },
+        {
+          "id": "DS-03",
+          "text": "Do you maintain a current data classification policy? Describe categories and handling requirements for PII and financial data.",
+          "type": "open_text",
+          "required": true
+        },
+        {
+          "id": "DS-04",
+          "text": "What Data Loss Prevention (DLP) controls are in place for financial data exfiltration prevention?",
+          "type": "open_text",
+          "required": true
+        },
+        {
+          "id": "DS-05",
+          "text": "Do you have a documented data retention and secure disposal policy? Specify retention periods for financial records.",
+          "type": "open_text",
+          "required": true
+        }
+      ]
+    },
+    {
+      "domain_id": "regulatory_compliance",
+      "domain_name": "Regulatory & Financial Compliance",
+      "weight": 0.25,
+      "questions": [
+        {
+          "id": "RC-01",
+          "text": "Do you hold relevant financial services licences or certifications (e.g., PCI DSS, ISO 27001, SOC 2 Type II)? List current certifications with expiry dates.",
+          "type": "open_text",
+          "required": true
+        },
+        {
+          "id": "RC-02",
+          "text": "Do you have an AML/CTF compliance program? Describe transaction monitoring and suspicious activity reporting capabilities.",
+          "type": "open_text",
+          "required": true
+        },
+        {
+          "id": "RC-03",
+          "text": "How do you comply with APRA CPS 234 requirements for information security? Describe your policy framework and governance.",
+          "type": "open_text",
+          "required": true
+        },
+        {
+          "id": "RC-04",
+          "text": "Can you support our regulatory reporting obligations (e.g., AUSTRAC, ASIC) by providing audit logs and data extracts on request?",
+          "type": "open_text",
+          "required": true
+        },
+        {
+          "id": "RC-05",
+          "text": "Do you have a documented process for responding to regulatory inquiries or investigations involving your platform?",
+          "type": "open_text",
+          "required": true
+        }
+      ]
+    },
+    {
+      "domain_id": "business_continuity",
+      "domain_name": "Business Continuity & Operational Resilience",
+      "weight": 0.20,
+      "questions": [
+        {
+          "id": "BC-01",
+          "text": "What is your Recovery Time Objective (RTO) and Recovery Point Objective (RPO) for critical financial systems?",
+          "type": "open_text",
+          "required": true
+        },
+        {
+          "id": "BC-02",
+          "text": "How frequently do you test your business continuity and disaster recovery plans? Provide date of last full test.",
+          "type": "open_text",
+          "required": true
+        },
+        {
+          "id": "BC-03",
+          "text": "Do you maintain geographically diverse data centres? Describe replication architecture and failover capabilities.",
+          "type": "open_text",
+          "required": true
+        },
+        {
+          "id": "BC-04",
+          "text": "What is your documented uptime SLA for financial transaction processing systems?",
+          "type": "open_text",
+          "required": true
+        },
+        {
+          "id": "BC-05",
+          "text": "How do you manage capacity planning to prevent service degradation during peak financial processing periods (e.g., month-end, settlement)?",
+          "type": "open_text",
+          "required": true
+        }
+      ]
+    },
+    {
+      "domain_id": "access_identity",
+      "domain_name": "Access Control & Identity Management",
+      "weight": 0.15,
+      "questions": [
+        {
+          "id": "AC-01",
+          "text": "Do you enforce multi-factor authentication (MFA) for all privileged access to financial systems? Describe MFA mechanisms.",
+          "type": "open_text",
+          "required": true
+        },
+        {
+          "id": "AC-02",
+          "text": "Do you implement Privileged Access Management (PAM)? How are privileged credentials stored and rotated?",
+          "type": "open_text",
+          "required": true
+        },
+        {
+          "id": "AC-03",
+          "text": "Do you conduct quarterly access reviews for all users with access to financial data or systems?",
+          "type": "open_text",
+          "required": true
+        },
+        {
+          "id": "AC-04",
+          "text": "How do you manage access provisioning and de-provisioning for staff changes? Describe your joiner/mover/leaver process.",
+          "type": "open_text",
+          "required": true
+        },
+        {
+          "id": "AC-05",
+          "text": "Do you log and monitor all privileged user activity? How long are audit logs retained?",
+          "type": "open_text",
+          "required": true
+        }
+      ]
+    },
+    {
+      "domain_id": "incident_response",
+      "domain_name": "Incident Response & Breach Notification",
+      "weight": 0.12,
+      "questions": [
+        {
+          "id": "IR-01",
+          "text": "What is your maximum time to notify clients of a data breach affecting financial data? Confirm compliance with APRA CPS 234 72-hour notification requirement.",
+          "type": "open_text",
+          "required": true
+        },
+        {
+          "id": "IR-02",
+          "text": "Describe your Security Operations Centre (SOC) capabilities. Do you operate a 24x7 SOC or use a managed service?",
+          "type": "open_text",
+          "required": true
+        },
+        {
+          "id": "IR-03",
+          "text": "Have you experienced any security incidents affecting financial data in the past 24 months? If so, describe nature and resolution.",
+          "type": "open_text",
+          "required": true
+        }
+      ]
+    }
+  ]
+}
