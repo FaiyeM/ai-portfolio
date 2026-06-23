@@ -15,4 +15,4 @@ All projects include demo mode, tests, and full READMEs. See [PORTFOLIO_INDEX.md
 
 ---
 
-🛠️ **Tech themes:** RAG · Agentic tool_use loops · ML explainability (SHAP) · Multi-model NLP pipelines · Structured LLM output · FastAPI · Streamlit
+🛠️ **Tech :** RAG · Agentic tool_use loops · ML explainability (SHAP) · Multi-model NLP pipelines · Structured LLM output · FastAPI · Streamlit
