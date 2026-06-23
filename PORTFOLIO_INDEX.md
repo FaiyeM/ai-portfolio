@@ -1,5 +1,4 @@
-# AI/ML Portfolio — Senior Technology Leader
-### 6 Production-Grade Projects · Python · Anthropic Claude · GitHub-Ready
+### 6 Production-Grade Projects
 
 ---
 
