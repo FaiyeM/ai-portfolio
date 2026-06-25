@@ -1,6 +1,6 @@
 # 🤖 AI/ML Portfolio
 
-**6 production-grade Python projects** demonstrating applied AI/ML across cybersecurity, compliance, fraud detection, and financial intelligenceeach runnable in demo mode with no API key required.
+**6 production-grade Python projects** demonstrating AI/ML across cybersecurity, compliance, fraud detection, and financial intelligence. 
 
 These are proof of concepts for ideas I want to extend in future. MIT License, but please credit if you use them.
 
